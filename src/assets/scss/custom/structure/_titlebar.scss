@@ -1,0 +1,34 @@
+#titlebar {
+  border-radius: 8px;
+  margin: 0 10px 16px;
+
+  .links {
+    display: flex;
+    column-gap: 48px;
+
+    a {
+      color: $white;
+      &:hover {
+        color: #affea2;
+      }
+    }
+
+    a.active {
+      color: $teagreen;
+      text-decoration: underline !important;
+      text-underline-offset: 20px;
+    }
+  }
+
+  .btn {
+    background-color: #333333;
+    border: 0px;
+    &:hover {
+      background-color: #affea2;
+    }
+    &:hover > span,
+    &:hover > i {
+      color: #212121;
+    }
+  }
+}

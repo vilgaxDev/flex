@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "source": "Telegram",
+      "monthly": 560,
+      "weekly": 140,
+      "daily": 20
+    },
+    {
+      "source": "Twitter",
+      "monthly": 480,
+      "weekly": 120,
+      "daily": 17
+    },
+    {
+      "source": "Discord",
+      "monthly": 180,
+      "weekly": 30,
+      "daily": 4
+    },
+    {
+      "source": "Tiktok",
+      "monthly": 381,
+      "weekly": 118,
+      "daily": 16
+    },
+    {
+      "source": "Google",
+      "monthly": 512,
+      "weekly": 128,
+      "daily": 18
+    }
+  ]
+}

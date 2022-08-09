@@ -1,0 +1,201 @@
+body {
+  background-color: $body-bg;
+}
+
+#chartdiv canvas:nth-of-type(2) {
+  display: none;
+}
+
+.container {
+  display: flex;
+  touch-action: none;
+  width: 100%;
+  height: 100%;
+  margin: 1rem auto;
+}
+
+.dropzone {
+  flex: 1;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.dropzone.left {
+  margin-right: 10px;
+}
+
+.grid-item {
+  height: 300px;
+  width: 100%;
+}
+
+.grid-item-content {
+  width: 100%;
+  height: 300px;
+
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  border-radius: 0.5em;
+}
+
+.my-chart-card {
+  min-height: 300px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-calendar-heatmap .color-empty {
+  fill: #e6e7e2;
+}
+.react-calendar-heatmap .color-scale-1 {
+  fill: #e9b5d3;
+}
+.react-calendar-heatmap .color-scale-2 {
+  fill: #e587bc;
+}
+.react-calendar-heatmap .color-scale-3 {
+  fill: #de60a8;
+}
+.react-calendar-heatmap .color-scale-4 {
+  fill: #00ff85;
+}
+.react-calendar-heatmap .color-scale-5 {
+  fill: #f8d1e7;
+}
+.react-calendar-heatmap .color-scale-6 {
+  fill: #f5f5f5;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: url(#pathway);
+}
+
+.badge.bg-danger {
+  background-color: #de60a8 !important;
+}
+
+.card {
+  height: 100%;
+}
+
+.template-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+
+  &.two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  p {
+    margin: 4px 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 12px;
+  }
+
+  span {
+    line-height: 1.2;
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.template-selector {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #778bae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  svg {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  &.selected {
+    border: 2px solid #f5f5f5;
+  }
+
+  &:hover {
+    border-color: $primary;
+  }
+}
+
+.template-selector-img {
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &.selected {
+    border: 2px solid #f5f5f5;
+  }
+
+  &:hover {
+    border-color: $stroke-5;
+  }
+}
+
+.editor {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  background-color: #222638;
+  padding: 24px;
+}
+
+.chart-here {
+  min-height: 200px;
+  border: 1px dashed #f5f5f5;
+  border-radius: 8px;
+}
+
+.offcanvas {
+  &.offcanvas-end {
+    border-color: #414141;
+  }
+
+  background-color: #121212;
+
+  .offcanvas-header {
+    .offcanvas-title {
+      margin-bottom: 16px;
+    }
+  }
+
+  .btn-rounded {
+    border-radius: 24px;
+  }
+
+  .btn-chart {
+    border-width: 0px;
+  }
+
+  .btn-success {
+    color: #212121;
+  }
+}
